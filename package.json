@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "cd client && npm run build && cd .. && docker build . -t friistyler/kasiabox",
+    "publish": "docker image tag friistyler/kasiabox friistyler.dk:5000/friistyler/kasiabox:latest && docker image push friistyler.dk:5000/friistyler/kasiabox:latest",
     "start": "node server/index.js",
     "dev": "nodemon server/index.js",
     "test": "jest --watchAll"
