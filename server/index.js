@@ -24,7 +24,7 @@ app.get("/csv", (req, res) => {
   for (let sim of simGen(state)) {
     res.write(sim+"\n");
   }
-    res.end();
+  res.end();
 });
 
 app.get('*', (req, res) => {
