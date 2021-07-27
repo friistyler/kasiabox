@@ -1,0 +1,26 @@
+{
+  "name": "combined",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "client"
+    ]
+  },
+  "scripts": {
+    "build": "cd client && npm run build && cd .. && docker build . -t friistyler/kasiabox",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
