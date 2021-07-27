@@ -1,5 +1,5 @@
 {
-  "name": "combined",
+  "name": "kasiabox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,8 +15,8 @@
     "test": "jest --watchAll"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Rasmus Leth Friis",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
   },
